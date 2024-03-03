@@ -1,8 +1,16 @@
+const funArr=['The game was played since the Han dynasty in China, which lasted from 202 BC until 220 AD.','The game has three possible outcomes: a draw, a win or a loss.','The odds of winning rock paper scissors is one in three or 33.33%.','On average, players use rock and scissors 35% of the time.']
 
+function funny(){
+    let messageBox=document.querySelector('.funFact p')
+    const randomIndex = Math.floor(Math.random() * funArr.length);
+    messageBox.innerText=funArr[randomIndex]
+    console.log(funArr[randomIndex])
+}
 const arr=document.querySelectorAll('.img1')
 var userSpan=0
 var compSpan=0
 arr.forEach((ele)=>{
+    funny()
     
     var optionSelect=1
     ele.addEventListener('click',(event)=>{
@@ -103,6 +111,7 @@ arr.forEach((ele)=>{
                 result.style.marginLeft='0px'
                 result.style.backgroundColor='wheat'
                 document.querySelector('.result p').innerText="Let's Start the game"
+                funny()
             } 
             else {
                 console.log('pressed no')
@@ -119,6 +128,7 @@ arr.forEach((ele)=>{
                 result.style.marginLeft='0px'
                 document.querySelector('.result p').innerText="Let's Start the game"
                 result.style.backgroundColor='wheat'
+                funny()
             } 
             else {
                 console.log('pressed no')

@@ -1,5 +1,6 @@
 body{
-    background-color: #AACCFF;
+    /* background-color: #AACCFF; */
+    background-image: url('abstract-watercolor-background_23-2149038179.avif');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -38,7 +39,7 @@ body{
 }
 .options .img1{
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff00;
     border: none;
     width: 250px;
     height: 250px;
@@ -114,11 +115,32 @@ body{
     width: 350px;
     
 }
-.extraImg{
+.extraImg {
     position: absolute;
     top: 520px;
     left: 1020px;
     height: 100px;
     width: 150px;
 
+}
+.funFact{
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 401px;
+    left: 1260px;
+    height: 150px;
+    width: 200px;
+    
+    
+        background-color: rgba(255, 255, 255, 0.637); /* Off-white background color */
+        border-radius: 50%; /* Rounded shape */
+        box-shadow: 20px 20px 10px rgba(135, 148, 107, 0.797); /* Soft shadow */
+      
+      
+
+}
+.funFact p{
+    margin-left: 18px;
+    margin-top: 45px;
+    font-size: medium;
 }
